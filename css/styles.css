@@ -1,0 +1,235 @@
+html {
+  height: 100%;
+}
+
+.content, .resourceContent {
+  padding: 1rem;
+  font-size: 22px;
+}
+
+body {
+  font-family: Arial;
+  background-color: rgb(204, 236, 255);
+  height: 100%;
+}
+
+#videoBG {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+
+  z-index: -1;
+}
+
+.topnav {
+  background-color: rgb(106, 154, 182);
+  max-width: fit-content;
+  /* float: left; */
+  overflow: hidden;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: rgb(222, 242, 255);
+  text-align: center;
+  padding: 0.875rem 1rem;
+  text-decoration: none;
+  font-size: 26px;
+}
+
+.topnav a:hover, .resource:hover {
+  background-color: #b9e0ff;
+  color: black;
+  transition: background-color, color, 0.5s ease;
+}
+
+.topnav a.active {
+  background-color: #254a69;
+  color: rgb(222, 242, 255);
+}
+
+.topnav .icon {
+  display: none;
+}
+
+.lightingMode {
+  background-color: rgb(153, 183, 201);
+  float: left;
+}
+
+#trench {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1rem;
+  width: 50%;
+}
+
+#trench:hover {
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-0.5deg); }
+  20% { transform: translate(-3px, 0px) rotate(0.5deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(0.5deg); }
+  50% { transform: translate(-1px, 2px) rotate(-0.5deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-0.5deg); }
+  80% { transform: translate(-1px, -1px) rotate(0.5deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-0.5deg); }  
+}
+
+#trenchDesc, #etDesc, #geoDesc, #geoCaption, #lifeDesc {
+  font-size: 25px;
+  text-align: center;
+}
+
+.imgBlock {
+  vertical-align: top;
+  text-align: center;
+}
+
+#mapText {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.etPics {
+  margin-top: 4rem;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  position: relative;
+  width: max-content;
+  margin-left: auto;
+  margin-right: auto; 
+}
+
+#plateMap {
+  display: block;
+  border: 7px solid #254a69;
+  margin-top: 3rem;
+  margin-left: auto;
+  margin-right: auto; 
+}
+
+#geoCaption {
+  margin-top: 4rem;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  transition: .4s ease;
+  background-color: rgb(106, 154, 182);
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.row {
+  position: relative;
+  text-align: center;
+}
+
+#flatfish, #shrimp, #snailfish, #amphipod {
+  width: 432px;
+  min-width: 432px;
+  margin-left: auto;
+  margin-right: auto; 
+}
+
+.lifeContainer {
+  position: relative;
+  width: max-content;
+  margin-left: auto;
+  margin-right: auto; 
+}
+
+.lifeContainer:hover .overlay {
+  opacity: 1;
+}
+
+.resourceContent {
+  position: relative;
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+}
+
+.resource {
+  display: inline-flex; 
+  align-items: center; 
+  justify-content: center; 
+  margin-left: 1rem;
+  margin-top: 15rem;
+  opacity: 0.7; 
+  background-color: rgb(106, 154, 182);
+  width: 300px;
+  height: 300px;
+}
+
+.resourceContent a {
+  color: rgb(222, 242, 255);
+  text-align: center;
+  padding: 0.875rem 1rem;
+  text-decoration: none;
+  font-size: 26px;
+}
+
+/* Flashlight Overlay */
+/* From: https://codepen.io/tomhodgins/pen/egWjBb */
+/* :root {
+  cursor: none;
+  --cursorX: 50vw;
+  --cursorY: 50vh;
+}
+
+:root:before {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  pointer-events: none;
+  background: radial-gradient(
+    circle 20vmax at var(--cursorX) var(--cursorY),
+    rgba(0,0,0,0) 0%,
+    rgba(0,0,0,.5) 80%,
+    rgba(0,0,0,.95) 100%
+  )
+} */

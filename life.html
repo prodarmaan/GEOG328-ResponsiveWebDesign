@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="GEOG 328 Lab 02 Deliverable">
+  <meta name="keywords" content="HTML, CSS, JavaScript, Front End Design">
+  <meta name="author" content="Armaan Azeem">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/styles.css">
+  <title>LAB 02</title>
+</head>
+
+<body id>
+
+  <!-- Navigation bar -->
+  <div class="topnav" id="myTopnav">
+    <!-- Pages -->
+    <a href="index.html">overview</a>
+    <a href="etymology.html">etymology</a>
+    <a href="geology.html">geology</a>
+    <a class="active" href="life.html">life</a>
+    <a href="resources.html">resources</a>
+
+    <!-- Hamburger menu for smaller screens -->
+    <a href="javascript:void(0);" class="icon">
+        <i class="fa fa-bars"></i>
+    </a>
+  </div>
+
+  <!-- Page Content -->
+  <div class="content">
+    <p id="lifeDesc">expeditions ranging from 1960 to present day have documented a variety of different marine species, such as:</p>
+
+      <div class="row">
+        <div class="lifeContainer">
+          <img src="img/flatfish.jpg" alt="flatfish" id="flatfish">
+          <div class="overlay">
+            <div class="text">
+              flatfish
+            </div>
+          </div>
+        </div>
+        <div class="lifeContainer">
+          <img src="img/shrimp.jpg" alt="shrimp" id="shrimp">
+          <div class="overlay">
+            <div class="text">
+              shrimp
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="lifeContainer">
+          <img src="img/snailfish.jpg" alt="snailfish" id="snailfish">
+          <div class="overlay">
+            <div class="text">
+              snailfish
+            </div>
+          </div>
+        </div>
+        <div class="lifeContainer">
+          <img src="img/amphipod.jpg" alt="amphipod" id="amphipod">
+          <div class="overlay">
+            <div class="text">
+              giant amphipods
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- JS Script -->
+  <script src="js/main.js"></script>
+  
+</body>
+</html>

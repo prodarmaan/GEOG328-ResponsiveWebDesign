@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="GEOG 328 Lab 02 Deliverable">
+  <meta name="keywords" content="HTML, CSS, JavaScript, Front End Design">
+  <meta name="author" content="Armaan Azeem">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/styles.css">
+  <title>LAB 02</title>
+</head>
+
+<body id>
+
+  <!-- Navigation bar -->
+  <div class="topnav" id="myTopnav">
+    <!-- Pages -->
+    <a href="index.html">overview</a>
+    <a href="etymology.html">etymology</a>
+    <a class="active" href="geology.html">geology</a>
+    <a href="life.html">life</a>
+    <a href="resources.html">resources</a>
+
+    <!-- Hamburger menu for smaller screens -->
+    <a href="javascript:void(0);" class="icon">
+        <i class="fa fa-bars"></i>
+    </a>
+  </div>
+
+  <!-- Page Content -->
+  <div class="content">
+    <p id="geoDesc">the mariana trench is the subduction zone between the pacific and philippine tectonic plates.</p>
+
+    <div class="container">
+      <img src="img/plates.png" id="plateMap" alt="Map of the Philippine Plate and Pacific Plate">
+      <div class="overlay">
+        <div class="text">
+          as the philippine plate moves in a northeasterly direction, the pacific plate does the same. 
+          when they meet, the pacific plate "subducts," or pushes under the philippine plate. this
+          causes the trench to form and deepen.
+        </div>
+      </div>
+    </div>
+
+    <p id="geoCaption">geological material at the western portion of the pacific plate is some of the oldest oceanic crust on earth.</p>
+  </div>
+
+  <!-- JS Script -->
+  <script src="js/main.js"></script>
+  
+</body>
+</html>
